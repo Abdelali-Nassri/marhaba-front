@@ -2,17 +2,12 @@ import React from 'react';
 import Lightbox  from 'react-images';
 import { Jumbotron, Col ,Row ,Button,Form,Image,Modal, Container} from 'react-bootstrap';
 import axios from 'axios';
-import { useState,useEffect } from 'react';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {GridList,GridListTile,GridListTileBar,ButtonGroup} from '@material-ui/core';
-import mediumZoom from 'medium-zoom';
 import {Loader} from './Loader';
 import Infos from './Infos';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import TextField from '@material-ui/core/TextField';
 import SearchIcon from '@material-ui/icons/Search';
-import { Hint } from 'react-autocomplete-hint';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import './gallery.css';
 export default class Gallery extends React.Component {

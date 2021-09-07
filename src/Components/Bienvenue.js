@@ -1,6 +1,4 @@
 import React from 'react'; 
-import Carousel from 'react-bootstrap/Carousel'
-import {Jumbotron,Button,InputGroup,FormControl} from 'react-bootstrap'; 
 
 import Gallery from './Gallery';
 import NavigationBar from './NavigationBar';

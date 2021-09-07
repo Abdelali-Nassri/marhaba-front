@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import { Alert, Col,Row,Container , Button,Image} from 'react-bootstrap';
-import NavigationBar from './NavigationBar';
-import {Grid,CardContent,Card,CardMedia} from '@material-ui/core';
+import { Alert, Col,Row ,Image} from 'react-bootstrap';
 import './background.css';
 import a33 from '../images/a33.gif';
 import log from '../images/log.png';
