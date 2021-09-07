@@ -4,7 +4,7 @@ import { Alert, Col,Row,Container , Button,Image} from 'react-bootstrap';
 import NavigationBar from './NavigationBar';
 import {Grid,CardContent,Card,CardMedia} from '@material-ui/core';
 import './background.css';
-import a3 from '../images/a3.gif';
+import a33 from '../images/a33.gif';
 import log from '../images/log.png';
 import Steeps from './Steeps';
 export default class Api extends Component{
@@ -24,7 +24,7 @@ export default class Api extends Component{
 						</Alert>
 					</Col>
 					<Col sm={6} style={{display: 'block',margin:'auto'}}>
-						<Image src={a3} className="grid-img" thumbnail />
+						<Image src={a33} className="grid-img" thumbnail />
 					</Col>
 				</Row>
 				<Row style={{}}>
