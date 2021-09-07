@@ -57,7 +57,7 @@ const url3 = "https://api-marhaba.herokuapp.com/api/villes/noms";
 axios.get(url).then((response) => {
 this.setState({photos:response.data.results});
 });
-if(!this.state.image==""){
+if(!this.state.image===""){
 axios.get(url2).then((response) => {
 this.setState({infos:response.data});
 this.setState({choix1:true})
