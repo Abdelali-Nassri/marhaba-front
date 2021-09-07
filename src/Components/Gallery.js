@@ -1,5 +1,4 @@
 import React from 'react';
-import Lightbox  from 'react-images';
 import { Jumbotron, Col ,Row ,Button,Form,Image,Modal, Container} from 'react-bootstrap';
 import axios from 'axios';
 import {GridList,GridListTile,GridListTileBar,ButtonGroup} from '@material-ui/core';
@@ -51,7 +50,7 @@ refresh = () => {
 	}
 handleSubmit = () => {
 console.log(this.state.image);
-const url = "http://api-marhaba.herokuapp.com/api/villes/photos/"+this.state.image+"?nombre="+this.state.number;
+const url = "https://api-marhaba.herokuapp.com/api/villes/photos/"+this.state.image+"?nombre="+this.state.number;
 const url2 = "https://api-marhaba.herokuapp.com/api/villes/infos/"+this.state.image;
 const url3 = "https://api-marhaba.herokuapp.com/api/villes/noms";
 
