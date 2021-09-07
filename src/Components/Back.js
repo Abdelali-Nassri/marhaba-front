@@ -19,7 +19,7 @@ class Back extends React.Component {
                 
                 <p>Découvrez les meilleures photos parmi des milliers de choix de villes maroccaines, </p>
                 
-                <a class="btn" href="">Découvrez notre Api</a>
+                <a class="btn" href="/api">Découvrez notre Api</a>
             </div>
           </div>
       </div>
