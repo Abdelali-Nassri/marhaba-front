@@ -10,7 +10,6 @@ import Api from './Components/Api';
 function App() {
 	
   
-  const background = {background:"white"};
 
   return ( <Router >
   				
