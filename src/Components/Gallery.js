@@ -82,7 +82,7 @@ this.setState({noms:response.data});
 					<Col>
 						<Jumbotron className=" text-white" style={{background:'RGB(23, 43, 90)', }}>
 							<div className="">
-								<h3>Explorer less villes maroccaines</h3>
+								<h3>Explorer les villes maroccaines</h3>
 							</div>
 							
 							<Form className="d-flex form" >
