@@ -8,6 +8,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import TextField from '@material-ui/core/TextField';
 import SearchIcon from '@material-ui/icons/Search';
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import {setState} from 'react';
 import './gallery.css';
 export default class Gallery extends React.Component {
 
@@ -57,7 +58,7 @@ const url3 = "https://api-marhaba.herokuapp.com/api/villes/noms";
 axios.get(url).then((response) => {
 this.setState({photos:response.data.results});
 });
-if(!this.state.image===""){
+if(!this.state.image==""){
 axios.get(url2).then((response) => {
 this.setState({infos:response.data});
 this.setState({choix1:true})
@@ -81,7 +82,7 @@ this.setState({noms:response.data});
 					<Col>
 						<Jumbotron className=" text-white" style={{background:'RGB(23, 43, 90)', }}>
 							<div className="">
-								<h3>Explorer les villes maroccaines</h3>
+								<h3>Explorer less villes maroccaines</h3>
 							</div>
 							
 							<Form className="d-flex form" >
@@ -100,7 +101,7 @@ this.setState({noms:response.data});
 								</Button>
 							</Form>
 						</Jumbotron>
-						{this.state.choix1?
+						{this.state.choix1 ?
 						<ButtonGroup size="large" aria-label=" button group" style={{marginBottom :"25px",width:'40%'}}>
 							{this.state.choix2?<Button onClick={this.setfalse}  className="btn" style={{background: 'RGB(23, 43, 90)',borderRadius:'40px 7px 7px 40px',width:'50%',marginRight:"10px"}} >Images</Button>:<Button onClick={this.setfalse} disabled  className="btn" style={{background: 'RGB(23, 43, 90)',borderRadius:'40px 7px 7px 40px',width:'50%',marginRight:"10px"}} >Images</Button>}
 							{this.state.choix2?<Button disabled onClick={this.settrue}  className="btn" style={{background: 'RGB(23, 43, 90)',borderRadius:'7px 40px 40px 7px',width:'50%',marginRight:"10px"}} >Infos</Button>:<Button onClick={this.settrue}   className="btn" style={{background: 'RGB(23, 43, 90)',borderRadius:'7px 40px 40px 7px',width:'50%',marginRight:"10px"}} >Infos</Button>}
