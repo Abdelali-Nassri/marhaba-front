@@ -37,4 +37,4 @@ jobs:
       - name: Build Package
         env:
           CI: false
-        run: node server.js
+        run: npm run build
